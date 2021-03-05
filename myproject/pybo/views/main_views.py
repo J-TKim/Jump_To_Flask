@@ -1,6 +1,6 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, url_for
 
-from pybo.models import Question
+from werkzeug.utils import redirect
 
 bp = Blueprint('main', __name__, url_prefix='/')
 
